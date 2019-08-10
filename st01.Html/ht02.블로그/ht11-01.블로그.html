@@ -1,13 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <style>
+        /* id="menu"*/
+        #menu {
+            list-style-type: none;
+
+        }
+
+        /* class="item" */
+        .item {
+            display: inline-block;
+        }
+
+        /* form */
+        form {
+            float: right;
+        }
+
+        /* section */
+        section {
+            float: left;
+            width: 80%;
+        }
+
+        /* footer */
+        footer {
+            line-height: 20px;
+            text-align: center;
+            height: 50px;
+            clear: both;
+        }
+
+        /* aside */
+        aside {
+            float: right;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>HTML5 Example Preview</h1>
-    <h2>한빛아카데미</h2>
+
+    <header>
+        <h1>HTML5 Example Preview</h1>
+        <h3>한빛아카데미</h3>
+    </header>
+
+    <nav>
+        <ul id="menu">
+            <li class="item"><a href="#">HTML5</a></li>
+            <li class="item"><a href="#">CSS</a></li>
+            <li class="item"><a href="#">JavaScript</a></li>
+        </ul>
+        <form action="">
+            <input type="text" title="검색">
+            <input type="submit" value="검색">
+        </form>
+    </nav>
+
+    <div id="">
+        <section>
+            <h2>HTML5 개요와 활용</h2>
+            <p>2013년 02월 14일</p>
+
+            <img src="http://placehold.it/430x280" alt="" width="430" height="280">
+            <article>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem pretium
+                    vitae
+                    rhoncus
+                    lectus <br>
+                    ullamcorper. Aliquam facilisis euismod diam sollicitudin commodo. Nunc sagittis sapien venenatis
+                    lorem
+                    vestibulum
+                    cursus <br>
+                    pellentesque hendrerit turpis, vitae tempor nibh ultricies at. Aliquam consequat rutrum erat, <br>
+                    vel sodales tellus sagittis at. Proin sollicitudin augue eu augue vehicula vitae bibendum odio
+                    porta.
+                    Aliquam
+                    elit arcu,<br>
+                    venenatis in imperdiet ut, scelerisque non dolor. Donec in vulputate tortor. Fusce egestas rutrum mi
+                    quis
+                    ultricies. Vivamus <br>
+                    blandit augue ac felis ullamcorper consectetur. Curabitur pretium fringilla neque, vitae cursus
+                    massa auctor
+                    vitae. Integer non <br>
+                    massa sit amet lacus accumsan blandit. Vivamus fermentum tellus at justo iaculis eu tempus lorem
+                    venenatis.
+                    Suspendisse <br>
+                    quis eros consectetur tellus posuere commodo. In hac habitasse platea dictumst.</p>
+            </article>
+            <article>
+                <p>Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed magna
+                    vehicula
+                    semper
+                    ac ut <br>
+                    enim. Duis ut mattis ligula. Mauris at sem elit. Vestibulum justo tortor, malesuada non tincidunt
+                    quis,
+                    feugiat
+                    ut metus. <br>
+                    Maecenas varius neque ut diam ultrices scelerisque. Praesent lectus massa, tincidunt vel adipiscing
+                    non,
+                    vehicula ut magna. <br>
+                    Cras quis lacinia ipsum. Sed consequat consectetur volutpat. Integer sed tortor risus. Donec
+                    accumsan ante
+                    vel
+                    justo porttitor <br>
+                    volutpat.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>카테고리</h3>
+            <ul>
+                <li><a href="데이터">데이터</a></li>
+                <li><a href="데이터">데이터</a></li>
+                <li><a href="데이터">데이터</a></li>
+                <li><a href="데이터">데이터</a></li>
+                <li><a href="데이터">데이터</a></li>
+            </ul>
+
+            <h3>최근 글</h3>
+            <ul>
+                <li><a href="데이터">데이터</a></li>
+                <li><a href="데이터">데이터</a></li>
+                <li><a href="데이터">데이터</a></li>
+                <li><a href="데이터">데이터</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <a href="Created By Team-HeXagon">Created By Team-HeXagon</a>
+    </footer>
 </body>
+
 </html>
