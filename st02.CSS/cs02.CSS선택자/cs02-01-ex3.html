@@ -7,14 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-/*css 초기화*/
-*{margin: o; padding: o; }
-/*다중 선택자*/
-h1,h2,h3,h4,h5,h6,p{
-    margin: 10px;
-    background-color: lightblue;
-}
+        /*css 초기화*/
+        * {
+            margin: o;
+            padding: o;
+        }
+
+        /*다중 선택자*/
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 10px;
+            background-color: lightblue;
+        }
+
+        /* <p.class="specials"> */
+        p .specials {
+            color: blue;
+        }
+
+        /* <p id="footer"> */
+        p#footer {
+            color: red;
+        }
+
+        #footer {
+            color: green;
+        }
     </style>
+
 </head>
 
 <body>
@@ -24,9 +49,23 @@ h1,h2,h3,h4,h5,h6,p{
     <h4>제목 글자</h4>
     <h5>제목 글자</h5>
     <h6>제목 글자</h6>
-
-
     <p> 단락 </p>
+
+    <hr>
+
+
+    <p class="specials"> p.specials 를 태그로 완성하시오
+    </p>
+
+
+    <div>
+        div.specials 를 태그로 완성하시오
+    </div>
+
+
+    <p id="footer">p#footer를 태그로 완성하시오
+
+    </p>
 
 </body>
 
