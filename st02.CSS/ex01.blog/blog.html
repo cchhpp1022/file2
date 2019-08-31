@@ -1,15 +1,144 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>HTML5 Basic Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        input.input-search {
+            border-radius: 10px 0px 0px 10px;
+            border: 1px solid gray;
+            border-right: 0px;
+            height: 20px;
+            text-indent: 10px;
+            outline: none;
+            float: left;
+        }
+
+        input.input-search-submit {
+            border-radius: 0px 10px 10px 0px;
+            border: 1px solid gray;
+            width: 45px;
+            height: 22px;
+            float: left;
+        }
+
+        nav#main-navigation {
+            border-top: 1px solid gainsboro;
+            border-bottom: 1px solid gainsboro;
+            margin: 20px 0px;
+        }
+
+        nav#main-navigation::after {
+            clear: both;
+            display: block;
+            content: " "
+        }
+
+        div.pull-left {
+            width: 400px;
+            float: left;
+
+        }
+
+        div.pull-right {
+            float: right;
+        }
+
+        li.outer-menu-item {
+            float: left;
+            padding: 10px;
+            list-style-type: none;
+        }
+
+        ul.outer-menu::after {
+            clear: both;
+            display: block;
+            content: " "
+        }
+
+        form {
+            float: right;
+        }
+
+        div.search-bar::after {
+            clear: both;
+            display: block;
+            content: " "
+        }
+
+        div.article-body {
+            float: left;
+        }
+
+        div.article-header {
+            float: left;
+            padding: 10px 0px;
+            text-align: left;
+        }
+
+        div#page-wrapper {
+            width: 800px;
+            height: 1000px;
+        }
+
+        section#main-section {
+            float: left;
+            width: 710px;
+        }
+
+        aside#main-aside {
+            float: right;
+
+        }
+
+        div::after {
+            clear: both;
+            display: block;
+            content: " "
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        div#content a {
+            text-decoration: none;
+
+        }
+
+        footer {
+            padding: 5px 0px;
+            border-top: 1px solid gainsboro;
+        }
+
+        div.search-bar {
+            margin: 10px 0px 0px 0px;
+        }
+
+
+        body {
+            padding: 50px;
+            border-left: 150px solid gainsboro;
+            border-right: 150px solid gainsboro;
+            border-top: 50px solid gainsboro;
+            border-bottom: 50px solid gainsboro;
+            height: 1300px;
+        }
+    </style>
 </head>
+
 <body>
     <div id="page-wrapper">
         <header id="main-header">
             <hgroup>
                 <h1 class="master-title">HTML5 Example Preview</h1>
-                <h2 class="master-description">한빛아카데미</h2>
+                <h3 class="master-description">한빛아카데미</h3>
             </hgroup>
         </header>
         <nav id="main-navigation">
@@ -17,31 +146,12 @@
                 <ul class="outer-menu">
                     <li class="outer-menu-item">
                         <span class="menu-title">HTML5</span>
-                        <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                        </ul>
                     </li>
                     <li class="outer-menu-item">
                         <span class="menu-title">CSS3</span>
-                        <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                        </ul>
                     </li>
                     <li class="outer-menu-item">
                         <span class="menu-title">JavaScript</span>
-                        <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                        </ul>
                     </li>
                 </ul>
             </div>
@@ -65,9 +175,24 @@
                         <img src="http://placehold.it/430x280" />
                         <br />
                         <br />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem pretium vitae rhoncus lectus ullamcorper. Aliquam facilisis euismod diam sollicitudin commodo. Nunc sagittis sapien venenatis lorem vestibulum cursus pellentesque mi sodales. Donec pellentesque hendrerit turpis, vitae tempor nibh ultricies at. Aliquam consequat rutrum erat, vel sodales tellus sagittis at. Proin sollicitudin augue eu augue vehicula vitae bibendum odio porta. Aliquam elit arcu, venenatis in imperdiet ut, scelerisque non dolor. Donec in vulputate tortor. Fusce egestas rutrum mi quis ultricies. Vivamus blandit augue ac felis ullamcorper consectetur. Curabitur pretium fringilla neque, vitae cursus massa auctor vitae. Integer non massa sit amet lacus accumsan blandit. Vivamus fermentum tellus at justo iaculis eu tempus lorem venenatis. Suspendisse quis eros consectetur tellus posuere commodo. In hac habitasse platea dictumst.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem
+                            pretium vitae rhoncus lectus ullamcorper. Aliquam facilisis euismod diam sollicitudin
+                            commodo. Nunc sagittis sapien venenatis lorem vestibulum cursus pellentesque mi sodales.
+                            Donec pellentesque hendrerit turpis, vitae tempor nibh ultricies at. Aliquam consequat
+                            rutrum erat, vel sodales tellus sagittis at. Proin sollicitudin augue eu augue vehicula
+                            vitae bibendum odio porta. Aliquam elit arcu, venenatis in imperdiet ut, scelerisque non
+                            dolor. Donec in vulputate tortor. Fusce egestas rutrum mi quis ultricies. Vivamus blandit
+                            augue ac felis ullamcorper consectetur. Curabitur pretium fringilla neque, vitae cursus
+                            massa auctor vitae. Integer non massa sit amet lacus accumsan blandit. Vivamus fermentum
+                            tellus at justo iaculis eu tempus lorem venenatis. Suspendisse quis eros consectetur tellus
+                            posuere commodo. In hac habitasse platea dictumst.</p>
                         <br />
-                        <p>Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed magna vehicula semper ac ut enim. Duis ut mattis ligula. Mauris at sem elit. Vestibulum justo tortor, malesuada non tincidunt quis, feugiat ut metus. Maecenas varius neque ut diam ultrices scelerisque. Praesent lectus massa, tincidunt vel adipiscing non, vehicula ut magna. Cras quis lacinia ipsum. Sed consequat consectetur volutpat. Integer sed tortor risus. Donec accumsan ante vel justo porttitor volutpat.</p>
+                        <p>Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed
+                            magna vehicula semper ac ut enim. Duis ut mattis ligula. Mauris at sem elit. Vestibulum
+                            justo tortor, malesuada non tincidunt quis, feugiat ut metus. Maecenas varius neque ut diam
+                            ultrices scelerisque. Praesent lectus massa, tincidunt vel adipiscing non, vehicula ut
+                            magna. Cras quis lacinia ipsum. Sed consequat consectetur volutpat. Integer sed tortor
+                            risus. Donec accumsan ante vel justo porttitor volutpat.</p>
                     </div>
                 </article>
             </section>
@@ -98,18 +223,5 @@
         </footer>
     </div>
 </body>
-</html>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.inner-menu').hide();
-
-        $('.outer-menu-item').mouseover(function () {
-            $(this).find('.inner-menu').show();
-        })
-        .mouseout( function () {
-            $(this).find('.inner-menu').hide();
-        });
-    });
-</script>
+</html>

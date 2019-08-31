@@ -1,15 +1,43 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<title>배경 스타일</title>
+	<style>
+		.content {
+			background-color: rgba(255, 255, 255, 0.500);
+			background-size: 1000px;
+			margin: 100px;
+		}
+
+		div.container {
+			background-image: url(../images/apple-bg.jpg);
+			background-repeat: no-repeat;
+			background-size: 1000px 500px;
+			padding: 300px 0px 100px 0px;
+			float: left;
+		}
+
+		.contanier::after {
+			clear: both;
+			display: block;
+			content: ' ';
+		}
+
+		h1 {
+			padding: 10px 50px 10px 50px;
+		}
+		
+	</style>
 </head>
+
 <body>
 	<!-- background-image를 이용하여 배경 이미지 추가 -->
 	<div class="container">
-	    <div class="content">
-	        <h1>하루 한 알의 사과는 의사를 멀리 한다</h1>
-	    </div>
+		<div class="content">
+			<h1>하루 한 알의 사과는 의사를 멀리 한다</h1>
+		</div>
 	</div>
 
 	<pre>
@@ -19,4 +47,5 @@
 		3. position 을 사용하여 위치 지정하기.
 	</pre>
 </body>
-</html>
+
+</html>
