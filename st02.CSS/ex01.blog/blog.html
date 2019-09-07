@@ -130,6 +130,29 @@
             border-bottom: 50px solid gainsboro;
             height: 1300px;
         }
+
+        li.outer-menu-item {
+            border: 1px solid gray;
+        }
+
+        li.outer-menu-item:hover {
+            background-color: gray;
+        }
+        
+        ul#menu2>li>ul {
+            display: none;
+            background-color: white;
+        }
+
+        ul#menu2>ul>li {
+            display: block;
+            border: 1px solid gray;
+            padding: 3px 13px 3px 13px;
+        }
+
+        ul#menu2>li:hover>ul {
+            display: block;
+        }
     </style>
 </head>
 

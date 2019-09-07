@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Ellipsis</title>
+    <style>
+        h1.ellipsis {
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        p.ellipsis {
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        body {
+            border: 1px solid green;
+        }
+    </style>
 </head>
+
 <body>
     <h1 class="ellipsis">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </h1>
-    <p  class="ellipsis">
+    <p class="ellipsis">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </p>
 </body>
+
 </html>

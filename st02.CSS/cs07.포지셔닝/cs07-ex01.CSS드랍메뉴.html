@@ -1,11 +1,84 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>자식>자식>자식></title>
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body div {
+            float: left;
+            margin: 50px 200px 0 10px;
+        }
+
+        body::after {
+            clear: both;
+            display: block;
+            content: ' ';
+        }
+
+        ul#menu2>li {
+            float: left;
+            border: 2px solid gray;
+            width: 100px;
+            color: white;
+            text-align: center;
+        }
+
+        ul#menu2>li:hover {
+            background-color: gray;
+
+        }
+
+        ul#menu2::after {
+            clear: both;
+            display: block;
+            content: ' ';
+        }
+
+        ul#menu2>li>ul {
+            display: none;
+            background-color: white;
+        }
+
+        ul#menu2>ul>li {
+            display: block;
+            border: 1px solid gray;
+            padding: 3px 13px 3px 13px;
+        }
+
+        ul#menu2>li:hover>ul {
+            display: block;
+        }
+
+
+
+        #menu2>li>a {
+            display: block;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border: 1px solid gray;
+            color: black;
+        }
     </style>
+
 </head>
+
 <body>
     <div>
         <ul id="menu1">
@@ -67,5 +140,5 @@
         </ul>
     </div>
 </body>
-</html>
 
+</html>

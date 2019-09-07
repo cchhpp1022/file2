@@ -1,9 +1,45 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>clear 1</title>
+    <style>
+        div>div {
+            width: 150px;
+            height: 100px;
+        }
+
+        div.box1 {
+            float: left;
+            background-color: gray;
+        }
+
+        div::after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+
+        div.box2 {
+            float: right;
+            background-color: red;
+        }
+
+        div::after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+
+        div.box3 {
+            background-color: blue;
+            width: 150px;
+            height: 100px;
+        }
+    </style>
 </head>
+
 <body>
     <div id="clearboth">
         <div class="box1">1</div> <!-- float:left; -->
@@ -11,4 +47,5 @@
     </div>
     <div class="box3">3</div>
 </body>
-</html>
+
+</html>
